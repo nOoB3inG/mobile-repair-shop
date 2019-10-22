@@ -1,0 +1,502 @@
+@font-face{
+	font-family: 'MMS';
+	src: url('../fonts/WebFont.eot');
+	src: url('../fonts/opificio_regula-rounded-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/opificio_regula-rounded-webfont.woff') format('woff'),
+	     url('../fonts/opificio_regula-rounded-webfont.ttf') format('truetype'),
+	     url('../fonts/opificio_regula-rounded-webfont.svg#opificio_regula-rounded-webfont') format('svg');
+}
+body{
+  margin: 0;
+  padding: 0;
+  font: 14px/1.61 'MMS';
+  color: #fff;
+  background-color: rgb(14,14,14);
+  letter-spacing: 1px;
+}
+/* Normalize */
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar{
+  width: 2px;
+  background-color: #2f2f2f;
+}
+::-webkit-scrollbar-thumb{
+  background: #fff;
+}
+
+/* Main */
+header{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  z-index: 100;
+  }
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+}
+nav ul li{
+  display: inline;
+  margin-left: 20px;
+}
+.header-right{
+ float: right;
+ font-family: 'Oswald';
+ letter-spacing: 2px;
+ margin-right: 50px;
+}
+.header-left{
+  float: left;
+  font-size: 2rem;
+  margin-left: 50px;
+}
+.clearfix::after, .clearfix::before{
+  content: "";
+  display: block;
+}
+.clearfix::after{
+  clear:both;
+}
+
+/* SHOWCASE WRAPPER */
+
+.showcase-wrapper{
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+/* ABOUT */
+.down{
+ position: relative;
+ top: 5px;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 30px;
+ height: 50px;
+ border: 3px solid #fff;
+ border-radius: 25px;
+ background: transparent;
+ overflow: hidden;
+}
+.down::before{
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #fff;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%,0);
+  animation: animate 1s linear infinite;
+}
+.down::after{
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  left: 50%;
+  top: 5px;
+  transform: translate(-50%,0);
+  border-radius: 3px;
+}
+.get-repair-wrapper{
+  margin-top: 80px;
+  width: 100%;
+  min-height: 130px;
+  height: auto;
+  background: linear-gradient(to bottom, #f78e24,#f76c4a);
+  color: #1d1d1f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+.get-repair-wrapper > div{
+  flex: 0 0 250px;
+}
+.title{
+  font-size: 2.1rem;
+  font-weight: bolder;
+}
+.container{
+  text-align: center;
+margin-top: 80px;
+overflow-x: hidden;
+}
+.display-title{
+  position: relative;
+  top: 0px;
+  height: auto;
+  font-size: 2.6rem;
+  text-align: center;
+}
+.display-title::after{
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: rotate(45deg) translateX(-50%);
+  background-image: url('../images/svg/screwdriver.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+width: 40px;
+height: 40px;
+}
+
+/* Choose us */
+.choose-us-wrapper{
+  margin: 0 auto;
+  margin-top: 120px;
+  width: 980px;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  font-weight: lighter;
+}
+.choose-us-wrapper > div{
+  flex: 0 0 300px;
+  max-height: 250px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    padding: 10px 5px;
+    cursor: default;
+}
+.choose-us-wrapper h2{
+  position: relative;
+}
+.choose-us-wrapper p{
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: rgba(255,255,255,0.5);
+}
+.choose-us-wrapper h2::before{
+content: "";
+position: absolute;
+top: -20px;
+left: 50%;
+transform: translateX(-50%);
+width: 18%;
+height: 2px;
+background: #fff;
+}
+.our-points{
+  margin-top: 40px;
+}
+.work-on-wrapper{
+  background-image: url('../images/wood-textures.jpeg');
+  background-repeat: repeat;
+  background-position: left;
+  background-size: 960px 960px;
+}
+.fix-title{
+  top: 50px;
+}
+.fix-desc-container{
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  min-height: 500px;
+  font-size: 1rem;
+    overflow: hidden;
+      text-align: left;
+}
+.fix-desc-container > div:nth-child(1){
+  flex: 0 1 500px;
+}
+.fix-desc-container > div:nth-child(2){
+  flex: 0 0 500px;
+  height: 500px;
+  background-image: url('../images/iphone-1.png');
+  background-position: center;
+  background-size: 129% 139%;
+  position: relative;
+}
+.fix-desc-container p{
+  margin-top: 20px;
+}
+.plus{
+  position: absolute;
+  cursor: pointer;
+  z-index: 1;
+}
+ .one{left: 100px;top: 100px;}
+ .two{left: 250px; top: 10px;}
+ .three{top: 60px;left: 400px;}
+ .four{top: 250px;left: 420px;}
+ .five{top: 250px; left: 250px}
+.plus::before{
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  height: 35px;
+  width: 35px;
+  background: #fff;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%);
+  animation-name: pulseit;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+.plus:hover .plus-info{
+  display: block;
+}
+.plus-info{
+  display: none;
+  position: absolute;
+  background: #000;
+  width: 200px;
+  padding: 10px;
+  font-size: 0.8rem;
+}
+.plus-info::before{
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background: #000;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.battery-info{
+  top: 50px;
+  left: -94px;
+}
+
+/* We handle */
+.phone-brands{
+margin-top: 80px;
+display: flex;
+justify-content: center;
+}
+.phone-brands > div{
+  color: rgba(255,255,255,0.4);
+  margin: 0 50px;
+}
+.phone-brands > div:nth-child(2){
+  font-size: 0.96rem;
+}.phone-brands > div:nth-child(3){
+font-size: 1.1rem;
+}
+
+/* Get estimate */
+.estimate{
+  position: relative;
+  left: 0;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+.estimate::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+.estimate video{
+  position: absolute;
+  top: -300px;
+  left: 58%;
+  transform: translateX(-50%);
+}
+.get-estimate{
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.1rem;
+  font-weight: bolder;
+  color: #fff;
+  width: 70%;
+  z-index: 2;
+  border: 5px solid #fff;
+  padding: 10px 20px;
+  line-height: 3.8rem;
+  cursor: default;
+  /* text-transform: uppercase; */
+}
+.reviews-container{
+background-image: url('../images/bg-content.png');
+background-position: center;
+background-size: cover;
+}
+
+
+/* MISC */
+.facebook{
+  color:#3b5998;
+}
+.insta{
+ color: #ffc838;
+}
+.youtube{
+  color: #FF0000;
+}
+.twitter{
+ color: #0084b4;
+}
+.call-btn{
+  border: 2px solid #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  transition: linear .4s;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.call-btn:hover{
+color: #fff;
+border: 2px solid #2f2f2f;
+background-color: #2f2f2f;
+}
+.button{
+  position: absolute;
+  top: 500px;
+  left: 55px;
+  z-index: 100;
+  padding: 10px 70px;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.button::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:100%;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  background: #fff;
+  z-index: -1;
+  transition: ease .4s;
+}
+.button::after{
+  content: "";
+  position: absolute;
+
+}
+.button:hover{
+  color: #000;
+}
+.button:hover::before{
+  transform: scaleY(1);
+}
+.button-two{
+  margin-top: 30px;
+background-color: #fff;
+width: 150px;
+text-align: center;
+color: #000;
+padding: 15px 20px;
+cursor: pointer;
+border: 1px solid #fff;
+transition: ease .4s;
+}
+.button-two:hover{
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.button-three{
+  background: transparent;
+  color: #fff;
+transition: linear .4s;
+cursor: pointer;
+  border: 2px solid #fff;
+}
+.button-three:hover{
+  border: 2px solid #fff;
+  background: #fff;
+color: #000;
+
+}
+.glitch{
+  position: relative;
+  margin: 0 auto;
+  /* font-size: 30px; */
+  text-align: center;
+}
+.glitch::before,.glitch::after{
+  content: "GET A FREE QUOTE NOW";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  background: transparent;
+  color: #fff;
+}
+.glitch::before{
+  left: 6px;
+  text-shadow: 2px 0 #00ffea;
+  animation: effect 3s infinite linear;
+}
+.glitch::after{
+  left: 4px;
+  text-shadow: -2px 0 #fe3a27;
+    animation: effect 2s infinite linear;
+}
+@keyframes effect {
+  0% {clip: rect(55px, 9999px, 56px, 0)}
+  5% {clip: rect(47px, 9999px, 30px, 0)}
+  10% {clip: rect(33px, 9999px, 36px, 0)}
+  15% {clip: rect(35px, 9999px, 9px, 0)}
+  20% {clip: rect(63px, 9999px, 59px, 0)}
+  25% {clip: rect(96px, 9999px, 98px, 0)}
+  30% {clip: rect(48px, 9999px, 77px, 0)}
+  35% {clip: rect(50px, 9999px, 34px, 0)}
+  40% {clip: rect(60px, 9999px, 72px, 0)}
+  45% {clip: rect(10px, 9999px, 81px, 0)}
+  50% {clip: rect(2px, 9999px, 60px, 0)}
+  55% {clip: rect(23px, 9999px, 89px, 0)}
+  60% {clip: rect(76px, 9999px, 91px, 0)}
+  65% {clip: rect(62px, 9999px, 30px, 0)}
+  70% {clip: rect(60px, 9999px, 73px, 0)}
+  75% {clip: rect(60px, 9999px, 87px, 0)}
+  80% {clip: rect(2px, 9999px, 14px, 0)}
+  85% {clip: rect(28px, 9999px, 87px, 0)}
+  90% {clip: rect(73px, 9999px, 50px, 0)}
+  95% {clip: rect(79px, 9999px, 70px, 0)}
+  100% {clip: rect(17px, 9999px, 79px, 0)}
+}
+/* ANIMATION */
+@keyframes pulseit {
+  from{transform: scale(0.9); opacity: 0.6}
+  to{transform: scale(1.2); opacity: 0.2}
+}
+
+@keyframes animate{
+0%{transform: translate(-50%,20px); opacity: 0}
+80%{transform: translate(-50%,60px);opacity: 1}
+100%{transform: translate(-50%,100px); opacity: 0}
+}
